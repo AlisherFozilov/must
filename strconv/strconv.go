@@ -1,4 +1,4 @@
-package strconv
+package strconvMust
 
 import "strconv"
 
