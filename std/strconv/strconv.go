@@ -18,8 +18,8 @@ func ParseBool(str string) bool {
 	return parseBool
 }
 
-func ParseFloat(str string) float64 {
-	float, err := strconv.ParseFloat(str)
+func ParseFloat(s string, bitSize int) float64 {
+	float, err := strconv.ParseFloat(s, bitSize)
 	if err != nil {
 		panic(err)
 	}
